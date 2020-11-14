@@ -12,6 +12,11 @@ class Canonical extends Meta
 {
     protected $unique = true;
 
+    protected function tag(): string
+    {
+        return 'meta';
+    }
+
     public static function defaults(Struct $struct): void
     {
         $struct->addAttribute('rel', 'canonical');
