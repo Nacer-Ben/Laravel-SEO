@@ -14,7 +14,7 @@ class Canonical extends Meta
 
     protected function tag(): string
     {
-        return 'meta';
+        return 'link';
     }
 
     public static function defaults(Struct $struct): void
